@@ -27,6 +27,7 @@ group :development, :test do
 
   gem 'rspec-rails', '~> 3.5'
   gem 'factory_girl_rails', '4.7.0'
+  gem 'rails-controller-testing', '1.0.1'
 end
 
 group :test do
