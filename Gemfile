@@ -12,6 +12,9 @@ gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.5'
 
+gem 'correios-cep', '0.6.1'
+gem 'oga', '2.7'
+
 group :development do
   gem 'web-console'
   gem 'listen', '~> 3.0.5'
