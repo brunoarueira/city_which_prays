@@ -1,14 +1,69 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>CityWhichPrays</title>
+    <title>Cidade que Ora</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <%= csrf_meta_tags %>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pontano+Sans" rel="stylesheet">
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container-fluid city-which-prays">
+      <div class="row bg-light-gray">
+        <div class="col-centered">
+          <ul class="list-inline steps">
+            <li class="text-center step">
+              <span class="fa-stack fa-2-4x">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-map-marker fa-stack-dot-7x fa-inverse"></i>
+              </span>
+
+              <span class="step-title">Cadastrar <span>meu endereço</span></span>
+            </li>
+
+            <li class="step step-disabled text-center">
+              <span class="fa-stack fa-2-4x">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-object-group fa-stack-dot-7x fa-inverse"></i>
+              </span>
+
+              <span class="step-title">Residências <span>próximas</span></span>
+            </li>
+
+            <li class="step step-disabled text-center">
+              <span class="fa-stack fa-2-4x">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-home fa-stack-dot-7x fa-inverse"></i>
+              </span>
+
+              <span class="step-title">Igreja</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="call-to-action text-center">
+          Realize seu <strong>cadastro</strong><br />
+          como <strong>voluntário</strong>
+        </div>
+      </div>
+
+      <div class="row bg-light-gray">
+        <%= yield %>
+      </div>
+
+      <div class="row">
+      </div>
+    </div>
   </body>
 </html>

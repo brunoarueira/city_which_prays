@@ -1,0 +1,60 @@
+.city-which-prays {
+  .steps {
+    display: flex;
+    margin: 28px auto;
+    padding: 0;
+    align-items: top;
+    justify-content: center;
+  }
+
+  .step {
+    font-family: 'Pontano Sans', sans-serif;
+    color: $light-green;
+    vertical-align: top;
+    display: block;
+    margin: 0 4.1em;
+    position: relative;
+    padding: 0;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 2.3em;
+      left: -5.6em;
+      width: 3.4em;
+      height: .3em;
+      background-color: $light-green;
+      z-index: 3;
+      display: block;
+      margin-right: 2px;
+    }
+
+    &:first-child::before {
+      display: none;
+    }
+
+    &-title {
+      font-size: 16px;
+      font-weight: bold;
+      display: block;
+      text-align: center;
+      word-wrap: break-word;
+
+      span {
+        display: block;
+      }
+    }
+
+    &-disabled {
+      color: $gray;
+
+      i:nth-child(2) {
+        color: $light-gray;
+      }
+
+      &::before {
+        background-color: $gray;
+      }
+    }
+  }
+}

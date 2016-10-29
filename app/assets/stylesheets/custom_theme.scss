@@ -1,0 +1,30 @@
+@import 'custom_theme/variables';
+
+@import 'custom_theme/custom_stack';
+@import 'custom_theme/steps';
+
+.city-which-prays {
+  font-family: 'Open Sans', sans-serif;
+
+  .bg {
+    &-light-gray {
+      background-color: $light-gray;
+    }
+  }
+
+  .call-to-action {
+    color: $dark-gray;
+    font-size: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    strong {
+      font-size: 52px;
+    }
+  }
+
+  .col-centered {
+    float: none;
+    margin: 0 auto;
+  }
+}

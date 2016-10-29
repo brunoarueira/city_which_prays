@@ -12,6 +12,9 @@ gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.5'
 
+gem 'bootstrap-sass', '~> 3.3.6'
+gem 'font-awesome-rails', '4.7.0.0'
+
 gem 'correios-cep', '0.6.1'
 gem 'oga', '2.7'
 
