@@ -2,6 +2,9 @@
 
 @import 'custom_theme/custom_stack';
 @import 'custom_theme/steps';
+@import 'custom_theme/buttons';
+@import 'custom_theme/helpers';
+@import 'custom_theme/form';
 
 .city-which-prays {
   font-family: 'Open Sans', sans-serif;
@@ -12,19 +15,39 @@
     }
   }
 
-  .call-to-action {
+  .dark-gray {
     color: $dark-gray;
-    font-size: 50px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+  }
 
-    strong {
-      font-size: 52px;
+  .light-green {
+    color: $light-green;
+  }
+
+  .table {
+    color: $text-gray;
+
+    thead {
+      color: $dark-gray;
+    }
+
+    &.table-hover tbody tr:hover td,
+    &.table-hover tbody tr:hover th {
+      background-color: $light-green;
+      color: #fff;
     }
   }
 
-  .col-centered {
-    float: none;
-    margin: 0 auto;
+  .custom-hr {
+    margin-left: 20px;
+    margin-right: 20px;
+    border-color: $gray;
   }
+
+	.vertical-center {
+		min-height: 100%;
+		min-height: 100vh;
+
+		display: flex;
+		align-items: center;
+	}
 }

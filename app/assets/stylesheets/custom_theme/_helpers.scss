@@ -1,0 +1,39 @@
+.city-which-prays {
+  .bolder {
+    font-weight: bold;
+  }
+
+  .call-to-action {
+    color: $dark-gray;
+    font-size: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 550px;
+
+    .bolder {
+      font-size: 52px;
+    }
+  }
+
+  .page-header {
+    .bolder {
+      font-size: 23px;
+    }
+  }
+
+  .featured {
+    &-1x {
+      font-weight: bold;
+      font-size: 18.5px;
+    }
+
+    &-2x {
+      font-weight: bold;
+      font-size: 23px;
+    }
+  }
+
+  .fa-10x {
+    font-size: 10em;
+  }
+}

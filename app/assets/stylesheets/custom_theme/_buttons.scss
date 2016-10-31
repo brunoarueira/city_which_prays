@@ -1,0 +1,23 @@
+.city-which-prays {
+  .btn-green {
+    color: #fff;
+    background-color: $btn-green;
+    border-color: $btn-green;
+
+    &:hover {
+      background-color: $btn-dark-green;
+      border-color: $btn-dark-green;
+    }
+  }
+
+  .btn-orange {
+    color: #fff;
+    background-color: $btn-orange;
+    border-color: $btn-orange;
+
+    &:hover {
+      background-color: $btn-dark-orange;
+      border-color: $btn-dark-orange;
+    }
+  }
+}
