@@ -8,9 +8,11 @@ gem 'puma', '~> 3.0'
 # View related gems
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.5'
+
+gem 'therubyracer', '0.12.2', platforms: :ruby
+gem 'react-rails', '1.9.0'
 
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'font-awesome-rails', '4.7.0.0'
