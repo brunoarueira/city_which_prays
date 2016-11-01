@@ -20,6 +20,10 @@ gem 'font-awesome-rails', '4.7.0.0'
 gem 'correios-cep', '0.6.1'
 gem 'oga', '2.7'
 
+group :production do
+  gem 'rails_12factor', '0.0.3'
+end
+
 group :development do
   gem 'web-console'
   gem 'listen', '~> 3.0.5'
