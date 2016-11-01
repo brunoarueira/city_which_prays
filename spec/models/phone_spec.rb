@@ -24,8 +24,6 @@ RSpec.describe Phone do
           subject.kind = Phone.kinds[:cell]
         end
 
-        it { should validate_presence_of(:volunteer_cellphone).with_message(:required) }
-
         it { is_expected.not_to allow_value("12345678").for(:number) }
         it { is_expected.to allow_value("123456789").for(:number) }
       end
@@ -34,8 +32,6 @@ RSpec.describe Phone do
         before do
           subject.kind = Phone.kinds[:residential]
         end
-
-        it { should validate_presence_of(:volunteer_residential_phone).with_message(:required) }
 
         it { is_expected.not_to allow_value("123456789").for(:number) }
         it { is_expected.to allow_value("12345678").for(:number) }

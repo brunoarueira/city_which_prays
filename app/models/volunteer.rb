@@ -6,8 +6,8 @@ class Volunteer < ApplicationRecord
                               class_name: "Phone",
                               foreign_key: "volunteer_residential_phone_id"
   has_one :address, as: :addressable
-  has_one :home_distribution
-  has_one :attending_church
+  has_one :home_distribution, inverse_of: :volunteer
+  has_one :attending_church, inverse_of: :volunteer
 
   validates :name, :email, presence: true
   validates :email, format: { with: /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i },

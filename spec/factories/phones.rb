@@ -6,6 +6,7 @@ FactoryGirl.define do
     whatsapp true
 
     trait :residential do
+      number "99999999"
       kind { Phone.kinds[:residential] }
       whatsapp nil
     end

@@ -1,5 +1,5 @@
 class AttendingChurch < ApplicationRecord
-  belongs_to :volunteer
+  belongs_to :volunteer, inverse_of: :attending_church
 
   has_one :address, as: :addressable
 

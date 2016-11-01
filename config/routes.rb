@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  root to: 'home#index'
-
   namespace :api do
     resources :zipcode, only: [] do
       collection do
@@ -10,4 +8,6 @@ Rails.application.routes.draw do
 
     resources :volunteers, only: [:create, :update]
   end
+
+  root 'home#index'
 end

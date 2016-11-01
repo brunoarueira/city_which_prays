@@ -4,34 +4,10 @@ class Api::VolunteersController < ApplicationController
   # POST /volunteers
   # POST /volunteers.json
   def create
-    @volunteer = Volunteer.new(volunteer_params)
-
-    respond_to do |format|
-      if @volunteer.save
-        format.json { render :show, status: :created }
-      else
-        format.json { render json: @volunteer.errors, status: :unprocessable_entity }
-      end
-    end
-  end
-
-  # PATCH/PUT /volunteers/1
-  # PATCH/PUT /volunteers/1.json
-  def update
-    respond_to do |format|
-      if @volunteer.update(volunteer_params)
-        format.json { render :show, status: :ok }
-      else
-        format.json { render json: @volunteer.errors, status: :unprocessable_entity }
-      end
-    end
+    VolunteerCreator.call(volunteer_params)
   end
 
   private
-
-  def set_volunteer
-    @volunteer = Volunteer.find(params[:id])
-  end
 
   def volunteer_params
     params.require(:volunteer)

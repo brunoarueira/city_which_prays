@@ -40,20 +40,13 @@ RSpec.describe Api::VolunteersController do
           post :create, params: { volunteer: valid_attributes }, format: :json
         }.to change(Volunteer, :count).by(1)
       end
-
-      it "assigns a newly created volunteer as @volunteer" do
-        post :create, params: { volunteer: valid_attributes }, format: :json
-
-        expect(assigns(:volunteer)).to be_a(Volunteer)
-        expect(assigns(:volunteer)).to be_persisted
-      end
     end
 
     context "with invalid params" do
       it "assigns a newly created but unsaved volunteer as @volunteer" do
-        post :create, params: { volunteer: invalid_attributes }, format: :json
-
-        expect(assigns(:volunteer)).to be_a_new(Volunteer)
+        expect {
+          post :create, params: { volunteer: invalid_attributes }, format: :json
+        }.to raise_error(ActiveRecord::RecordInvalid)
       end
     end
   end

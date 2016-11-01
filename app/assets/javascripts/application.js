@@ -10,6 +10,12 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require es5-shim
 //= require jquery
 //= require jquery_ujs
-//= require_tree .
+//= require jquery.maskedinput.min
+//= require react
+//= require react_ujs
+//= require redux.min
+//= require react-redux.min
+//= require constants
