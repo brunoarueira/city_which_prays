@@ -8,6 +8,9 @@ RSpec.describe Volunteer do
     it { should have_one(:residential_phone).conditions(kind: Phone.kinds[:residential])
                                             .class_name("Phone")
                                             .with_foreign_key("volunteer_residential_phone_id") }
+    it { should have_one :address }
+    it { should have_one :home_distribution }
+    it { should have_one :attending_church }
   end
 
   describe 'validations' do
