@@ -40,7 +40,7 @@ group :development, :test do
   gem 'byebug', platform: :mri
 
   gem 'rspec-rails', '~> 3.5'
-  gem 'factory_girl_rails', '4.7.0'
+  gem 'factory_girl_rails', '4.9.0'
   gem 'rails-controller-testing', '1.0.1'
 end
 
