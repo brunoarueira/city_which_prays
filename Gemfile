@@ -13,7 +13,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.5'
 
-gem 'therubyracer', '0.12.2', platforms: :ruby
+gem 'therubyracer', '0.12.3', platforms: :ruby
 gem 'react-rails', '2.4.7'
 
 gem 'bootstrap-sass', '~> 3.3.6'
