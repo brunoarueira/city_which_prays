@@ -71,10 +71,10 @@ GEM
     diff-lcs (1.2.5)
     erubis (2.7.0)
     execjs (2.7.0)
-    factory_girl (4.7.0)
+    factory_girl (4.9.0)
       activesupport (>= 3.0.0)
-    factory_girl_rails (4.7.0)
-      factory_girl (~> 4.7.0)
+    factory_girl_rails (4.9.0)
+      factory_girl (~> 4.9.0)
       railties (>= 3.0.0)
     ffi (1.9.25)
     font-awesome-rails (4.7.0.0)
@@ -238,7 +238,7 @@ DEPENDENCIES
   byebug
   capybara (= 2.10.1)
   correios-cep (= 0.6.4)
-  factory_girl_rails (= 4.7.0)
+  factory_girl_rails (= 4.9.0)
   font-awesome-rails (= 4.7.0.0)
   jbuilder (~> 2.5)
   jquery-rails
