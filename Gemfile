@@ -17,7 +17,7 @@ gem 'therubyracer', '0.12.2', platforms: :ruby
 gem 'react-rails', '1.9.0'
 
 gem 'bootstrap-sass', '~> 3.3.6'
-gem 'font-awesome-rails', '4.7.0.0'
+gem 'font-awesome-rails', '4.7.0.4'
 
 gem 'correios-cep', '0.6.4'
 gem 'oga', '2.7'
