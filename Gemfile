@@ -4,7 +4,7 @@ ruby '2.3.4'
 
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 
-gem 'pg', '~> 0.18'
+gem 'pg', '~> 1.1'
 gem 'puma', '~> 3.0'
 
 # View related gems
@@ -13,8 +13,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.5'
 
-gem 'therubyracer', '0.12.2', platforms: :ruby
-gem 'react-rails', '1.9.0'
+gem 'therubyracer', '0.12.3', platforms: :ruby
+gem 'react-rails', '2.4.7'
 
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'font-awesome-rails', '4.7.0.4'
@@ -40,13 +40,13 @@ group :development, :test do
   gem 'byebug', platform: :mri
 
   gem 'rspec-rails', '~> 3.5'
-  gem 'factory_girl_rails', '4.7.0'
+  gem 'factory_girl_rails', '4.9.0'
   gem 'rails-controller-testing', '1.0.1'
 end
 
 group :test do
   gem 'shoulda-matchers', '3.1.1'
-  gem 'capybara', '2.10.1'
+  gem 'capybara', '2.18.0'
   gem 'poltergeist', '1.11.0'
 end
 
