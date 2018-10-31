@@ -19,7 +19,7 @@ gem 'react-rails', '2.4.7'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'font-awesome-rails', '4.7.0.4'
 
-gem 'correios-cep', '0.6.4'
+gem 'correios-cep', '0.6.7'
 gem 'oga', '2.7'
 
 group :production do
