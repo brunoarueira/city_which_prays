@@ -70,7 +70,7 @@ GEM
     cliver (0.3.2)
     concurrent-ruby (1.0.5)
     connection_pool (2.2.2)
-    correios-cep (0.6.7)
+    correios-cep (0.6.8)
       log-me (~> 0.0.10)
       ox (~> 2.9)
     crass (1.0.4)
@@ -251,7 +251,7 @@ DEPENDENCIES
   bootstrap-sass (~> 3.3.6)
   byebug
   capybara (= 3.10.0)
-  correios-cep (= 0.6.7)
+  correios-cep (= 0.6.8)
   factory_girl_rails (= 4.9.0)
   font-awesome-rails (= 4.7.0.4)
   jbuilder (~> 2.7)
