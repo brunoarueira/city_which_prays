@@ -46,7 +46,7 @@ GEM
       public_suffix (>= 2.0.2, < 4.0)
     ansi (1.5.0)
     arel (9.0.0)
-    ast (2.3.0)
+    ast (2.4.0)
     autoprefixer-rails (6.5.1.1)
       execjs
     babel-source (5.8.35)
@@ -118,7 +118,7 @@ GEM
     nio4r (2.3.1)
     nokogiri (1.8.5)
       mini_portile2 (~> 2.3.0)
-    oga (2.7)
+    oga (2.15)
       ast
       ruby-ll (~> 2.1)
     ox (2.10.0)
@@ -257,7 +257,7 @@ DEPENDENCIES
   jbuilder (~> 2.7)
   jquery-rails
   listen (~> 3.1.5)
-  oga (= 2.7)
+  oga (= 2.15)
   pg (~> 1.1)
   poltergeist (= 1.18.1)
   puma (~> 3.0)
