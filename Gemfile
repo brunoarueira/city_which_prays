@@ -5,7 +5,7 @@ ruby '2.3.4'
 gem 'rails', '~> 5.2.1'
 
 gem 'pg', '~> 1.1'
-gem 'puma', '~> 3.0'
+gem 'puma', '~> 3.12'
 
 # View related gems
 gem 'sass-rails', '~> 5.0'
