@@ -46,7 +46,7 @@ end
 
 group :test do
   gem 'shoulda-matchers', '3.1.2'
-  gem 'capybara', '3.10.1'
+  gem 'capybara', '3.11.0'
   gem 'poltergeist', '1.18.1'
 end
 
