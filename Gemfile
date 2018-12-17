@@ -16,7 +16,7 @@ gem 'jbuilder', '~> 2.8'
 gem 'therubyracer', '0.12.3', platforms: :ruby
 gem 'react-rails', '2.4.7'
 
-gem 'bootstrap-sass', '~> 3.3.6'
+gem 'bootstrap-sass', '~> 3.4.0'
 gem 'font-awesome-rails', '4.7.0.4'
 
 gem 'correios-cep', '0.7.1'
