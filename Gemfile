@@ -14,7 +14,7 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 2.8'
 
 gem 'therubyracer', '0.12.3', platforms: :ruby
-gem 'react-rails', '2.4.7'
+gem 'react-rails', '2.5.0'
 
 gem 'bootstrap-sass', '~> 3.4.1'
 gem 'font-awesome-rails', '4.7.0.4'
