@@ -46,6 +46,8 @@ group :development, :test do
   gem 'factory_girl_rails', '4.9.0'
   gem 'rails-controller-testing', '1.0.4'
   gem 'rspec-rails', '~> 3.8'
+  gem 'rubocop', '~> 0.76', require: false
+  gem 'rubocop-rails', require: false
 end
 
 group :test do
