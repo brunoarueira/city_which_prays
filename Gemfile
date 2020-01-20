@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 
 ruby '2.7.0'
@@ -8,13 +10,13 @@ gem 'pg', '~> 1.1'
 gem 'puma', '~> 3.12'
 
 # View related gems
+gem 'jbuilder', '~> 2.9'
+gem 'jquery-rails'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
-gem 'jquery-rails'
-gem 'jbuilder', '~> 2.9'
 
-gem 'therubyracer', '0.12.3', platforms: :ruby
 gem 'react-rails', '2.5.0'
+gem 'therubyracer', '0.12.3', platforms: :ruby
 
 gem 'bootstrap-sass', '~> 3.4.1'
 gem 'font-awesome-rails', '4.7.0.5'
@@ -27,28 +29,30 @@ group :production do
 end
 
 group :development do
-  gem 'web-console'
   gem 'listen', '~> 3.1.5'
+  gem 'web-console'
 
-  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  # Spring speeds up development by keeping your application running in the
+  # background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  # Call 'byebug' anywhere in the code to stop execution and get a debugger
+  # console
   gem 'byebug', platform: :mri
 
-  gem 'rspec-rails', '~> 3.8'
   gem 'factory_girl_rails', '4.9.0'
   gem 'rails-controller-testing', '1.0.4'
+  gem 'rspec-rails', '~> 3.8'
 end
 
 group :test do
-  gem 'shoulda-matchers', '4.0.1'
   gem 'capybara', '3.22.0'
   gem 'poltergeist', '1.18.1'
+  gem 'shoulda-matchers', '4.0.1'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
