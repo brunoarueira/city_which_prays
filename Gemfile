@@ -13,7 +13,7 @@ gem 'puma', '~> 4.3'
 gem 'jbuilder', '~> 2.9'
 gem 'jquery-rails', '4.3.5'
 gem 'sass-rails', '~> 6.0'
-gem 'uglifier', '>= 1.3.0'
+gem 'uglifier', '~> 4.2'
 
 gem 'react-rails', '2.6.1'
 gem 'therubyracer', '0.12.3', platforms: :ruby
