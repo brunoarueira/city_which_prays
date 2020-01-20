@@ -11,7 +11,7 @@ gem 'puma', '~> 4.3'
 
 # View related gems
 gem 'jbuilder', '~> 2.9'
-gem 'jquery-rails'
+gem 'jquery-rails', '4.3.5'
 gem 'sass-rails', '~> 6.0'
 gem 'uglifier', '>= 1.3.0'
 
