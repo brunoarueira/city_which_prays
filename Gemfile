@@ -28,9 +28,6 @@ group :production do
 end
 
 group :development do
-  gem 'listen', '~> 3.1.5'
-  gem 'web-console'
-
   # Spring speeds up development by keeping your application running in the
   # background. Read more: https://github.com/rails/spring
   gem 'spring'
@@ -38,10 +35,6 @@ group :development do
 end
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger
-  # console
-  gem 'byebug', platform: :mri
-
   gem 'factory_bot_rails', '4.11.1'
   gem 'rspec-rails', '~> 3.9'
   gem 'rubocop', '~> 0.76', require: false
@@ -53,6 +46,3 @@ group :test do
   gem 'poltergeist', '1.18.1'
   gem 'shoulda-matchers', '4.0.1'
 end
-
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
