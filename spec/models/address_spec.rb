@@ -1,8 +1,10 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe Address do
   describe 'associations' do
-    it { should belong_to :addressable }
+    it { should belong_to(:addressable).optional }
   end
 
   describe 'validations' do

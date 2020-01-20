@@ -1,14 +1,16 @@
-FactoryGirl.define do
+# frozen_string_literal: true
+
+FactoryBot.define do
   factory :phone do
-    ddd 22
-    number "999999999"
+    ddd { 22 }
+    number { '999999999' }
     kind { Phone.kinds[:cell] }
-    whatsapp true
+    whatsapp { true }
 
     trait :residential do
-      number "99999999"
+      number { '99999999' }
       kind { Phone.kinds[:residential] }
-      whatsapp nil
+      whatsapp { nil }
     end
   end
 end

@@ -10,65 +10,65 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161031224656) do
+ActiveRecord::Schema.define(version: 2016_10_31_224656) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "addresses", force: :cascade do |t|
-    t.string   "name"
-    t.integer  "number"
-    t.string   "complement"
-    t.string   "neighborhood"
-    t.string   "city"
-    t.string   "state"
-    t.string   "zipcode"
-    t.integer  "addressable_id"
-    t.string   "addressable_type"
-    t.datetime "created_at",       null: false
-    t.datetime "updated_at",       null: false
+  create_table "addresses", id: :serial, force: :cascade do |t|
+    t.string "name"
+    t.integer "number"
+    t.string "complement"
+    t.string "neighborhood"
+    t.string "city"
+    t.string "state"
+    t.string "zipcode"
+    t.integer "addressable_id"
+    t.string "addressable_type"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
-  create_table "attending_churches", force: :cascade do |t|
-    t.string   "name"
-    t.string   "main_leader"
-    t.integer  "volunteer_id"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
-    t.index ["volunteer_id"], name: "index_attending_churches_on_volunteer_id", using: :btree
+  create_table "attending_churches", id: :serial, force: :cascade do |t|
+    t.string "name"
+    t.string "main_leader"
+    t.integer "volunteer_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["volunteer_id"], name: "index_attending_churches_on_volunteer_id"
   end
 
-  create_table "home_distributions", force: :cascade do |t|
-    t.boolean  "except_homes"
-    t.boolean  "numbers_from_buildings"
-    t.string   "number_from_homes_to_distribute"
-    t.boolean  "deliver_on_building_for_all"
-    t.string   "building_name"
-    t.integer  "volunteer_id"
-    t.datetime "created_at",                      null: false
-    t.datetime "updated_at",                      null: false
-    t.index ["volunteer_id"], name: "index_home_distributions_on_volunteer_id", using: :btree
+  create_table "home_distributions", id: :serial, force: :cascade do |t|
+    t.boolean "except_homes"
+    t.boolean "numbers_from_buildings"
+    t.string "number_from_homes_to_distribute"
+    t.boolean "deliver_on_building_for_all"
+    t.string "building_name"
+    t.integer "volunteer_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["volunteer_id"], name: "index_home_distributions_on_volunteer_id"
   end
 
-  create_table "phones", force: :cascade do |t|
-    t.integer  "ddd"
-    t.string   "number"
-    t.integer  "kind"
-    t.integer  "volunteer_cellphone_id"
-    t.integer  "volunteer_residential_phone_id"
-    t.boolean  "whatsapp",                       default: false
-    t.datetime "created_at",                                     null: false
-    t.datetime "updated_at",                                     null: false
-    t.index ["volunteer_cellphone_id"], name: "index_phones_on_volunteer_cellphone_id", using: :btree
-    t.index ["volunteer_residential_phone_id"], name: "index_phones_on_volunteer_residential_phone_id", using: :btree
+  create_table "phones", id: :serial, force: :cascade do |t|
+    t.integer "ddd"
+    t.string "number"
+    t.integer "kind"
+    t.integer "volunteer_cellphone_id"
+    t.integer "volunteer_residential_phone_id"
+    t.boolean "whatsapp", default: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["volunteer_cellphone_id"], name: "index_phones_on_volunteer_cellphone_id"
+    t.index ["volunteer_residential_phone_id"], name: "index_phones_on_volunteer_residential_phone_id"
   end
 
-  create_table "volunteers", force: :cascade do |t|
-    t.string   "name"
-    t.string   "email"
-    t.datetime "created_at",       null: false
-    t.datetime "updated_at",       null: false
-    t.boolean  "terms_to_receive"
+  create_table "volunteers", id: :serial, force: :cascade do |t|
+    t.string "name"
+    t.string "email"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.boolean "terms_to_receive"
   end
 
   add_foreign_key "attending_churches", "volunteers"
