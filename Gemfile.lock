@@ -44,7 +44,6 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.6.0)
       public_suffix (>= 2.0.2, < 4.0)
-    ansi (1.5.0)
     arel (9.0.0)
     ast (2.4.0)
     autoprefixer-rails (9.4.7)
@@ -127,9 +126,6 @@ GEM
     nio4r (2.3.1)
     nokogiri (1.10.5)
       mini_portile2 (~> 2.4.0)
-    oga (2.15)
-      ast
-      ruby-ll (~> 2.1)
     ox (2.10.0)
     parallel (1.19.1)
     parser (2.7.0.2)
@@ -217,9 +213,6 @@ GEM
     rubocop-rails (2.4.1)
       rack (>= 1.1)
       rubocop (>= 0.72.0)
-    ruby-ll (2.1.2)
-      ansi
-      ast
     ruby-progressbar (1.10.1)
     ruby_dep (1.5.0)
     sass (3.7.2)
@@ -288,7 +281,6 @@ DEPENDENCIES
   jbuilder (~> 2.9)
   jquery-rails
   listen (~> 3.1.5)
-  oga (= 2.15)
   pg (~> 1.1)
   poltergeist (= 1.18.1)
   puma (~> 3.12)

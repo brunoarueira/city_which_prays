@@ -22,7 +22,6 @@ gem 'bootstrap-sass', '~> 3.4.1'
 gem 'font-awesome-rails', '4.7.0.5'
 
 gem 'correios-cep', '0.7.1'
-gem 'oga', '2.15'
 
 group :production do
   gem 'rails_12factor', '0.0.3'
