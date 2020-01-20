@@ -42,7 +42,7 @@ group :development, :test do
   # console
   gem 'byebug', platform: :mri
 
-  gem 'factory_girl_rails', '4.9.0'
+  gem 'factory_bot_rails', '4.11.1'
   gem 'rails-controller-testing', '1.0.4'
   gem 'rspec-rails', '~> 3.8'
   gem 'rubocop', '~> 0.76', require: false

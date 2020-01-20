@@ -78,10 +78,10 @@ GEM
       unf (>= 0.0.5, < 1.0.0)
     erubi (1.8.0)
     execjs (2.7.0)
-    factory_girl (4.9.0)
+    factory_bot (4.11.1)
       activesupport (>= 3.0.0)
-    factory_girl_rails (4.9.0)
-      factory_girl (~> 4.9.0)
+    factory_bot_rails (4.11.1)
+      factory_bot (~> 4.11.1)
       railties (>= 3.0.0)
     ffi (1.9.25)
     font-awesome-rails (4.7.0.5)
@@ -276,7 +276,7 @@ DEPENDENCIES
   byebug
   capybara (= 3.22.0)
   correios-cep (= 0.7.1)
-  factory_girl_rails (= 4.9.0)
+  factory_bot_rails (= 4.11.1)
   font-awesome-rails (= 4.7.0.5)
   jbuilder (~> 2.9)
   jquery-rails
