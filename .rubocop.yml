@@ -9,6 +9,8 @@ Layout/LineLength:
   Max: 100
 Style/Documentation:
   Enabled: false
+Rails/InverseOf:
+  Enabled: false
 Rails/OutputSafety:
   Enabled: false
 Metrics/BlockLength:
