@@ -7,7 +7,7 @@ ruby '2.7.0'
 gem 'rails', '~> 6.0'
 
 gem 'pg', '~> 1.2'
-gem 'puma', '~> 3.12'
+gem 'puma', '~> 4.3'
 
 # View related gems
 gem 'jbuilder', '~> 2.9'
