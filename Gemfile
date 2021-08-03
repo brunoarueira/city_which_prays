@@ -2,7 +2,7 @@
 
 source 'https://rubygems.org'
 
-ruby '2.7.0'
+ruby '2.7.1'
 
 gem 'rails', '~> 6.0'
 
@@ -16,7 +16,6 @@ gem 'sass-rails', '~> 6.0'
 gem 'uglifier', '~> 4.2'
 
 gem 'react-rails', '2.6.1'
-gem 'therubyracer', '0.12.3', platforms: :ruby
 
 gem 'bootstrap-sass', '~> 3.4.1'
 gem 'font-awesome-rails', '4.7.0.5'
