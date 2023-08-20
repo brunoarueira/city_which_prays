@@ -1,0 +1,63 @@
+version: '3.4'
+services:
+  backend:
+    build:
+      context: .
+      target: backend
+      args:
+        BUNDLE_IS_PRD: 'true'
+    image: city_which_prays/backend:local
+    command: >
+        sh -c "bundle check || bundle install &&
+               bundle exec puma -C config/puma.rb"
+    env_file:
+      - './infrastructure/docker/.env.dev'
+    ports:
+      - '3000:3000'
+    volumes:
+      - '.:/srv/www/city_which_prays:delegated'
+      - 'public-assets:/srv/www/city_which_prays/public:rw'
+      - '/srv/www/city_which_prays/vendor'
+    networks:
+      - default
+    depends_on:
+      - postgres
+    tmpfs:
+      - /tmp
+    stdin_open: true
+    tty: true
+
+  frontend:
+    image: city_which_prays/frontend:local
+    build:
+      context: .
+      target: frontend
+      args:
+        BUNDLE_IS_PRD: 'true'
+    env_file:
+      - './infrastructure/docker/.env.dev'
+    volumes:
+      - 'public-assets:/srv/www/city_which_prays/public:ro'
+    ports:
+      - '80:80'
+    networks:
+      - default
+    depends_on:
+      - backend
+  postgres:
+    image: 'postgres:14.7-alpine'
+    ports:
+      - '5432:5432'
+    env_file:
+      - './infrastructure/docker/.env.database.dev'
+    networks:
+      - default
+    volumes:
+      - 'postgres-data:/var/lib/postgresql/data'
+
+networks:
+  default:
+    driver: bridge
+volumes:
+  postgres-data:
+  public-assets:
