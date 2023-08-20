@@ -6,9 +6,9 @@ This app was made to register volunteers to deliver gifts (specially books) to m
 
 I've made this app using:
 
-* Ruby 2.3.0
+* Ruby 2.7.1
 
-* Rails 5
+* Rails 6
 
 * React
 
@@ -41,7 +41,7 @@ You can see the app online here [https://city-which-prays.herokuapp.com/](https:
 
 ## TODO
 
-* Apply redux, I tried but the capybara's driver allowed me to run the app
+* Apply redux, I tried but the capybara's driver not allowed me to run the app on test env
 
 * Improve for other resolutions like tablets
 
