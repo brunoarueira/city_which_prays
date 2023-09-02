@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 
 ruby '2.7.8'
 
-gem 'rails', '~> 6.0.4'
+gem 'rails', '~> 6.1'
 
 gem 'pg', '~> 1.2'
 gem 'puma', '~> 5.6'
@@ -18,7 +18,7 @@ gem 'uglifier', '~> 4.2'
 gem 'react-rails', '2.6.1'
 
 gem 'bootstrap-sass', '~> 3.4.1'
-gem 'font-awesome-rails', '4.7.0.5'
+gem 'font-awesome-rails', '~> 4.7'
 
 gem 'correios-cep', '0.7.1'
 
