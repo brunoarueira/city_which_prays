@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 
 ruby '2.7.8'
 
-gem 'rails', '~> 6.0.4'
+gem 'rails', '~> 6.1'
 
 gem 'pg', '~> 1.2'
 gem 'puma', '~> 5.6'
@@ -18,7 +18,7 @@ gem 'uglifier', '~> 4.2'
 gem 'react-rails', '2.6.1'
 
 gem 'bootstrap-sass', '~> 3.4.1'
-gem 'font-awesome-rails', '4.7.0.5'
+gem 'font-awesome-rails', '~> 4.7'
 
 gem 'correios-cep', '0.7.1'
 
@@ -35,7 +35,7 @@ end
 
 group :development, :test do
   gem 'factory_bot_rails', '~> 5.1'
-  gem 'rspec-rails', '~> 3.9'
+  gem 'rspec-rails', '~> 4.0'
   gem 'rubocop', '~> 0.76', require: false
   gem 'rubocop-rails', require: false
 end
