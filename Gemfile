@@ -2,11 +2,11 @@
 
 source 'https://rubygems.org'
 
-ruby '2.7.8'
+ruby '3.2.2'
 
 gem 'rails', '~> 6.1'
 
-gem 'pg', '~> 1.2'
+gem 'pg', '~> 1.5'
 gem 'puma', '~> 5.6'
 
 # View related gems
@@ -20,7 +20,7 @@ gem 'react-rails', '2.6.1'
 gem 'bootstrap-sass', '~> 3.4.1'
 gem 'font-awesome-rails', '~> 4.7'
 
-gem 'correios-cep', '0.7.1'
+gem 'correios-cep', '0.8.0'
 
 group :production do
   gem 'rails_12factor', '0.0.3'
