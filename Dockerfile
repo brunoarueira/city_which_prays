@@ -1,5 +1,5 @@
 # | base
-FROM ruby:2.7.8-alpine3.16 as base
+FROM ruby:3.2.2-alpine3.16 as base
 RUN apk add --update --no-cache tzdata postgresql-dev postgresql-client build-base git shared-mime-info nodejs
 
 ENV TZ=America/Sao_Paulo
