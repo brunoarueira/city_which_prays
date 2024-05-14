@@ -20,7 +20,7 @@ gem 'react-rails', '2.6.1'
 gem 'bootstrap-sass', '~> 3.4.1'
 gem 'font-awesome-rails', '~> 4.7'
 
-gem 'correios-cep', '0.8.0'
+gem 'via_cep', github: 'marcelobarreto/via_cep', ref: '9b7cebe'
 
 group :production do
   gem 'rails_12factor', '0.0.3'
@@ -41,7 +41,7 @@ group :development, :test do
 end
 
 group :test do
-  gem 'capybara', '3.22.0'
+  gem 'capybara', '3.40.0'
   gem 'poltergeist', '1.18.1'
   gem 'shoulda-matchers', '~> 4.2'
 end

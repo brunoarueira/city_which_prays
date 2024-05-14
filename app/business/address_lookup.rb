@@ -14,9 +14,20 @@ class AddressLookup
   def find
     return [] if value.blank?
 
-    return unless value =~ ZIP_CODE_REGEX
+    return unless value.match?(ZIP_CODE_REGEX)
 
-    [correios_cep_finder.get(value)]
+    address = correios_cep_finder.new(value)
+
+    [
+      {
+        address: address.street,
+        neighborhood: address.neighborhood,
+        city: address.city,
+        state: address.state,
+        complement: address.complement,
+        zipcode: value
+      }
+    ]
   end
 
   protected
@@ -26,6 +37,6 @@ class AddressLookup
   private
 
   def correios_cep_finder
-    Correios::CEP::AddressFinder
+    ViaCep::Address
   end
 end
