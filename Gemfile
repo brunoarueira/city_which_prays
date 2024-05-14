@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 
 ruby '3.2.2'
 
-gem 'rails', '~> 6.1'
+gem 'rails', '6.1.7.7'
 
 gem 'pg', '~> 1.5'
 gem 'puma', '~> 5.6'
