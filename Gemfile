@@ -2,9 +2,9 @@
 
 source 'https://rubygems.org'
 
-ruby '3.2.2'
+ruby '3.3.10'
 
-gem 'rails', '6.1.7.7'
+gem 'rails', '~> 7.2', '>= 7.2.3.1'
 
 gem 'pg', '~> 1.5'
 gem 'puma', '~> 7.2'
@@ -15,7 +15,7 @@ gem 'jquery-rails', '4.4.0'
 gem 'sass-rails', '~> 6.0'
 gem 'uglifier', '~> 4.2'
 
-gem 'react-rails', '2.6.1'
+gem 'react-rails', '~> 3.3'
 
 gem 'bootstrap-sass', '~> 3.4.1'
 gem 'font-awesome-rails', '~> 4.7'
@@ -26,16 +26,9 @@ group :production do
   gem 'rails_12factor', '0.0.3'
 end
 
-group :development do
-  # Spring speeds up development by keeping your application running in the
-  # background. Read more: https://github.com/rails/spring
-  gem 'spring'
-  gem 'spring-watcher-listen', '~> 2.0.0'
-end
-
 group :development, :test do
   gem 'factory_bot_rails', '~> 5.1'
-  gem 'rspec-rails', '~> 4.0'
+  gem 'rspec-rails', '~> 7.1'
   gem 'rubocop', '~> 0.76', require: false
   gem 'rubocop-rails', require: false
 end
