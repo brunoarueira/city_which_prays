@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class Phone < ApplicationRecord
-  enum kind: { cell: 1, residential: 2 }
+  enum :kind, { cell: 1, residential: 2 }
 
   belongs_to(
     :volunteer_cellphone,

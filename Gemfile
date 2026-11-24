@@ -4,13 +4,13 @@ source 'https://rubygems.org'
 
 ruby '3.3.10'
 
-gem 'rails', '~> 7.2', '>= 7.2.3.1'
+gem 'rails', '~> 8.0'
 
 gem 'pg', '~> 1.5'
 gem 'puma', '~> 7.2'
 
 # View related gems
-gem 'jbuilder', '~> 2.9'
+gem 'jbuilder', '~> 2.13'
 gem 'jquery-rails', '4.4.0'
 gem 'sass-rails', '~> 6.0'
 gem 'uglifier', '~> 4.2'
