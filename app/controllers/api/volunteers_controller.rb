@@ -1,6 +1,4 @@
 class Api::VolunteersController < ApplicationController
-  before_action :set_volunteer, only: [:update]
-
   # POST /volunteers
   # POST /volunteers.json
   def create
