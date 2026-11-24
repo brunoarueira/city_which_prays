@@ -10,7 +10,7 @@ gem 'pg', '~> 1.5'
 gem 'puma', '~> 7.2'
 
 # View related gems
-gem 'jbuilder', '~> 2.9'
+gem 'jbuilder', '~> 2.13'
 gem 'jquery-rails', '4.4.0'
 gem 'sass-rails', '~> 6.0'
 gem 'uglifier', '~> 4.2'
